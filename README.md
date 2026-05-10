@@ -3,7 +3,7 @@
 Welcome to the source code for my professional portfolio website! This repository contains the code for a fully responsive, visually stunning personal portfolio built to showcase my skills, experience, and projects as a Full-Stack Software Developer.
 
 ## 🚀 Live Preview
-*(You can add your GitHub Pages live link here later!)*
+https://pateldhriti.github.io/Portfolio/
 
 ## 🎨 Design Highlights
 The portfolio is designed with a modern, eye-catching **3D Light Theme** featuring:
