@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhritiben Patel | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Dhritiben Patel – Full-Stack Software Developer skilled in React, Node.js, Java, Python and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>DP<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#hero" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Available for Internship · Sep 2026
+      </div>
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="gradient-text">Dhritiben</span><br />
+        <span class="typed-wrapper">I build <span id="typed"></span></span>
+      </h1>
+      <p class="hero-sub reveal">
+        Full-Stack Developer & Master of Applied Computing student at University of Windsor.<br />
+        Crafting scalable, high-performance web applications with modern technologies.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://github.com/pateldhriti" target="_blank" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dhritiben-patel-929a91242" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:patel3gc@uwindsor.ca" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+      <div class="avatar-glow">
+        <div class="avatar-inner">
+          <span>DP</span>
+        </div>
+      </div>
+      <div class="tech-float t1">React</div>
+      <div class="tech-float t2">Node.js</div>
+      <div class="tech-float t3">Python</div>
+      <div class="tech-float t4">Java</div>
+      <div class="tech-float t5">Docker</div>
+      <div class="tech-float t6">SQL</div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / About Me</span>
+        <h2>Passionate Developer,<br /><span class="gradient-text">Problem Solver</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-card-icon">🎓</div>
+          <h3>Education</h3>
+          <p><strong>Master of Applied Computing</strong><br />University of Windsor · Sep 2025–Present<br />GPA: 7.4/10</p>
+          <hr class="card-divider" />
+          <p><strong>B.Sc. Computer Science (Hons.)</strong><br />Algoma University · 2022–2025<br />GPA: 7.5/10</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-card-icon">💡</div>
+          <h3>What I Do</h3>
+          <p>I specialize in building end-to-end web applications — from designing intuitive UIs to crafting robust REST APIs and database systems.</p>
+          <ul class="about-list">
+            <li>Full-Stack Web Development</li>
+            <li>RESTful API Design</li>
+            <li>Database Architecture</li>
+            <li>Agile & CI/CD Workflows</li>
+          </ul>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-card-icon">🚀</div>
+          <h3>Quick Facts</h3>
+          <div class="stat-row"><span class="stat-num">10+</span><span>REST APIs Built</span></div>
+          <div class="stat-row"><span class="stat-num">15+</span><span>React Components</span></div>
+          <div class="stat-row"><span class="stat-num">20+</span><span>Tests Written</span></div>
+          <div class="stat-row"><span class="stat-num">3</span><span>Major Projects</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / Skills</span>
+        <h2>My Technical <span class="gradient-text">Arsenal</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3><span class="cat-icon">⚡</span> Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">PHP</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><span class="cat-icon">🎨</span> Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag accent">React.js</span>
+            <span class="skill-tag accent">HTML5</span>
+            <span class="skill-tag accent">CSS3</span>
+            <span class="skill-tag accent">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><span class="cat-icon">⚙️</span> Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag green">Node.js</span>
+            <span class="skill-tag green">Express.js</span>
+            <span class="skill-tag green">Spring Boot</span>
+            <span class="skill-tag green">RESTful APIs</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><span class="cat-icon">🗄️</span> Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag purple">MySQL</span>
+            <span class="skill-tag purple">PostgreSQL</span>
+            <span class="skill-tag purple">MongoDB</span>
+            <span class="skill-tag purple">Oracle</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><span class="cat-icon">🛠️</span> Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag orange">Git / GitHub</span>
+            <span class="skill-tag orange">Docker</span>
+            <span class="skill-tag orange">Jira</span>
+            <span class="skill-tag orange">Linux</span>
+            <span class="skill-tag orange">Postman</span>
+            <span class="skill-tag orange">AWS</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3><span class="cat-icon">🔄</span> Practices</h3>
+          <div class="skill-tags">
+            <span class="skill-tag pink">Agile / SDLC</span>
+            <span class="skill-tag pink">CI/CD</span>
+            <span class="skill-tag pink">Unit Testing</span>
+            <span class="skill-tag pink">Code Reviews</span>
+            <span class="skill-tag pink">Auth & Security</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Projects</span>
+        <h2>Things I've <span class="gradient-text">Built</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-header">
+            <div class="project-icon">📦</div>
+            <div class="project-links">
+              <a href="https://github.com/pateldhriti/CodeSnap-Full-Stack-Code-Sharing-Platform.git" target="_blank" class="proj-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-badge">Featured · April 2026</span>
+          <h3>CodeSnap</h3>
+          <p class="project-desc">Full-Stack Code Sharing Platform — A scalable web application with 10+ RESTful APIs, 15+ reusable React components, secure authentication, and containerized deployment via Docker.</p>
+          <div class="project-tech">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>TypeScript</span><span>MySQL</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🗄️</div>
+            <div class="project-links">
+              <a href="https://github.com/bhavik41/DB_Git.git" target="_blank" class="proj-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-badge">Jan – Apr 2026</span>
+          <h3>DB-Git</h3>
+          <p class="project-desc">Database Schema Version Control System supporting rollback, branching, concurrency control, and PostgreSQL advisory locks for safe multi-user operations.</p>
+          <div class="project-tech">
+            <span>PostgreSQL</span><span>Node.js</span><span>SQL</span><span>JSON</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🤖</div>
+            <div class="project-links"></div>
+          </div>
+          <span class="project-badge">Sep – Dec 2025</span>
+          <h3>AI News Aggregator</h3>
+          <p class="project-desc">Full-stack AI-powered news aggregation platform with React frontend, Spring Boot backend, 20+ unit/integration tests, and Docker-based CI/CD deployment workflows.</p>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>React</span><span>MongoDB</span><span>Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Experience</span>
+        <h2>My Professional <span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Developer Intern</h3>
+                <span class="company">Tuva Data Literacy Company · Remote</span>
+              </div>
+              <span class="timeline-date">May – Aug 2023</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed Python-based data processing pipelines, improving operational efficiency by 20–30%</li>
+              <li>Performed debugging, testing, and maintenance to ensure system reliability and data accuracy</li>
+              <li>Contributed to full SDLC including development, testing, deployment, and documentation</li>
+              <li>Assisted with Linux-based system integration and deployment configuration tasks</li>
+            </ul>
+            <div class="timeline-tech"><span>Python</span><span>Linux</span><span>Data Pipelines</span><span>SDLC</span></div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot dim"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Warehouse Associate</h3>
+                <span class="company">Amazon · Windsor, ON</span>
+              </div>
+              <span class="timeline-date">Oct – Dec 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Managed high-volume order processing while maintaining accuracy and efficiency</li>
+              <li>Collaborated with team to ensure timely order fulfillment in a deadline-driven environment</li>
+            </ul>
+            <div class="timeline-tech"><span>Team Collaboration</span><span>Adaptability</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership -->
+      <div class="leadership-section reveal">
+        <h3 class="leadership-title">Leadership & Activities</h3>
+        <div class="leadership-grid">
+          <div class="lead-card">
+            <span class="lead-icon">🤝</span>
+            <p>Collaborative Agile development projects using Git-based workflows</p>
+          </div>
+          <div class="lead-card">
+            <span class="lead-icon">📋</span>
+            <p>Volunteered as proctor for university coding competitions — technical coordination</p>
+          </div>
+          <div class="lead-card">
+            <span class="lead-icon">💼</span>
+            <p>Attended IBM tech sessions and developer workshops for industry networking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / Contact</span>
+        <h2>Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-sub">Open to internship opportunities starting September 2026. Let's build something great together!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <a href="mailto:patel3gc@uwindsor.ca" class="contact-item" id="email-link">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">patel3gc@uwindsor.ca</span>
+            </div>
+          </a>
+          <a href="tel:6475500304" class="contact-item" id="phone-link">
+            <div class="contact-icon">📞</div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">647-550-0304</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/dhritiben-patel-929a91242" target="_blank" class="contact-item" id="linkedin-link">
+            <div class="contact-icon">💼</div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Dhritiben Patel</span>
+            </div>
+          </a>
+          <a href="https://github.com/pateldhriti" target="_blank" class="contact-item" id="github-link">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">pateldhriti</span>
+            </div>
+          </a>
+          <div class="contact-item location">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Windsor, ON, Canada</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="send-btn">Send Message 🚀</button>
+          <div id="form-msg" class="form-msg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><span class="logo-bracket">&lt;</span>DP<span class="logo-bracket">/&gt;</span></div>
+      <p class="footer-copy">© 2026 Dhritiben Patel · Crafted with ❤️ & lots of ☕</p>
+      <div class="footer-links">
+        <a href="https://github.com/pateldhriti" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/dhritiben-patel-929a91242" target="_blank">LinkedIn</a>
+        <a href="mailto:patel3gc@uwindsor.ca">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
